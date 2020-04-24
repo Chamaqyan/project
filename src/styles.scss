@@ -1,1 +1,177 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ 
+.slick-prev,
+.slick-next {
+    width: 50px !important;
+    height: 50px !important;
+    &::before {
+        content: "" !important;
+    }
+}
+
+.slick-next {
+    z-index: 222;
+    right: 15px !important;
+}
+
+.slick-prev {
+    z-index: 222;
+    left: 15px !important;
+}
+
+
+.grid {
+    top: 4%;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+  
+    figure {
+      position: relative;
+      overflow: hidden;
+      margin: 10px 1%;
+      min-width: 320px;
+      max-width: 340px;
+      max-height: 360px;
+      width: 25%;
+    //   height: 20%;
+      background: #3085a3;
+      text-align: center;
+      cursor: pointer;
+  
+      img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+      }
+  
+      figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+  
+        &::before,
+        &::after {
+          pointer-events: none;
+        }
+  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  
+        > a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1000;
+          text-indent: 200%;
+          white-space: nowrap;
+          font-size: 0;
+          opacity: 0;
+        }
+      }
+  
+      h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+  
+        span {
+          font-weight: 800;
+        }
+  
+        margin: 0;
+      }
+  
+      p {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 68.5%;
+      }
+    }
+  }
+
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px auto;
+    label {
+        left: 0px;
+        top: 12px;
+        font-size: 15px;
+        position: absolute;
+        transition: 0.3s;
+        color: #ffc107;
+    }
+    input {
+        padding: 12px 10px;
+        transition: 0.3s;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid  #ffc107;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        &:focus + label{
+            top: -10px;
+        }
+    }
+    span {
+        position: absolute;
+        color: red;
+        bottom: -20px;
+    }
+    .active-label {
+        top: -10px;
+    }
+}
+.w-50{
+  width: 50%;
+}
+
+
+.mat-dialog-container {
+  padding: 0!important;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: rgba(0,0,0,.87);
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+&::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px #00000029;
+    border-radius: 12px;
+}
+}

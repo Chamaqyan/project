@@ -1,0 +1,81 @@
+figure.effect-julia {
+    background: #2f3238;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+      -webkit-transition: opacity 1s, -webkit-transform 1s;
+      transition: opacity 1s, transform 1s;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    figcaption {
+      text-align: left;
+    }
+
+    h2 {
+      position: relative;
+      padding: 0.5em 0;
+    }
+
+    p {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.9);
+      color: #2f3238;
+      text-transform: none;
+      font-weight: 500;
+      font-size: 65%;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(-360px, 0, 0);
+      transform: translate3d(-360px, 0, 0);
+
+      &:first-child {
+        -webkit-transition-delay: 0.15s;
+        transition-delay: 0.15s;
+      }
+
+      &:nth-of-type(2) {
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+      }
+
+      &:nth-of-type(3) {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+      }
+    }
+
+    &:hover {
+      p {
+        &:first-child {
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+        }
+
+        &:nth-of-type(2) {
+          -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+        }
+
+        &:nth-of-type(3) {
+          -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+        }
+      }
+
+      img {
+        opacity: 0.4;
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+      }
+
+      p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }

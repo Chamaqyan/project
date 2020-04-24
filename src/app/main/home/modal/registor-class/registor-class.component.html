@@ -1,0 +1,34 @@
+<div class="registor_details">
+    <div class="title">
+        <p>RegisterFor Register</p>
+    </div>
+    <form [formGroup]="registorForm">
+        <div class="form-group">
+            <input type="text" formControlName="name">
+            <label [activeLabel]="registorForm.get('name').value">Name*</label>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="surname">
+            <label [activeLabel]="registorForm.get('surname').value">Surname*</label>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="age">
+            <label [activeLabel]="registorForm.get('age').value">Age*</label>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="email">
+            <label [activeLabel]="registorForm.get('email').value">Email*</label>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="phoneNumber">
+            <label [activeLabel]="registorForm.get('phoneNumber').value">Phone-Number*</label>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="classname">
+            <label [activeLabel]="registorForm.get('classname').value">Class-Name*</label>
+        </div>
+        <div class="form-group">
+            <button class="btn">SEARCH CLASS</button>
+        </div>
+    </form>
+</div>

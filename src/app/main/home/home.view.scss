@@ -1,0 +1,333 @@
+.ourActive {
+  width: 100%;
+  margin: 50px 0px;
+  height: auto;
+  text-align: center;
+  .ourActiveTextProffile {
+    color: black;
+    font-size: 26.75px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 3px solid white;
+    h2::before {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+    h2::after {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+  }
+}
+.OurServices {
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+  display: inline-block;
+  text-align: center;
+  .ourServicesTextProffile {
+    color: black;
+    font-size: 26.75px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 3px solid white;
+    h2::before {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+    h2::after {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+  }
+}
+
+.donat {
+  max-width: 1980px;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  background-color: #212121;
+  text-align: center;
+  h2 {
+    border-top: 3px solid transparent;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: white;
+    width: 200px;
+    margin: auto;
+  }
+  form {
+    width: 80%;
+    margin: 25px auto;
+
+    display: flex;
+    .donEmail {
+      width: 80%;
+      height: 50px;
+    }
+    .donInput {
+      width: 20%;
+      height: 50px;
+      color: white;
+      background-color: #ffc107;
+      border: 1px solid #ffc107;
+    }
+  }
+}
+.workClassSerch {
+  max-width: 1980px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+
+  > {
+    :nth-child(1) {
+      width: 50%;
+      padding: 20px;
+      height: 400px;
+      background-color: #ffc107;
+      text-align: center;
+
+      > {
+        p {
+          &:nth-child(1) {
+            margin-top: 30px;
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+          }
+
+          &:nth-child(2) {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+          }
+
+          &:nth-child(3) {
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 30px;
+          }
+        }
+
+        button {
+          border: 1px solid #212121;
+          background-color: #212121;
+          color: white;
+          font-size: 17px;
+          font-weight: bold;
+          width: 200px;
+          height: 40px;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    :nth-child(2) {
+      width: 50%;
+      padding: 20px;
+      height: 400px;
+      background-image: url(../../../assets/image/products-online-courses.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+
+      > {
+        p {
+          font-size: 40px;
+          color: white;
+          font-weight: bold;
+          margin-top: 50px;
+        }
+
+        form {
+          display: flex;
+          margin-top: 21px;
+          flex-direction: column;
+
+          button {
+            cursor: pointer;
+            border: 1px solid #ffc107;
+            background-color: #ffc10700;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            outline: none;
+            transition: 0.5s;
+            &:hover {
+              background-color: #ffc10778;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.event-details {
+  margin: 20px 0px;
+  .title {
+    color: black;
+    font-size: 26.75px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 3px solid white;
+    h2::before {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+    h2::after {
+      content: "-";
+      font-size: 40px;
+      padding: 0 5px;
+    }
+  }
+  .content{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .OurServices {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid red;
+    height: 100%;
+    text-align: center;
+  }
+  .grid {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    text-align: center;
+  }
+
+  .workClassSerch {
+    max-width: 1980px;
+    width: 100%;
+    margin: auto;
+    display: block;
+
+    > {
+      :nth-child(1) {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+        background-color: #ffc107;
+        text-align: center;
+
+        > {
+          p {
+            &:nth-child(1) {
+              margin-top: 30px;
+              font-size: 40px;
+              color: white;
+              font-weight: bold;
+            }
+
+            &:nth-child(2) {
+              font-size: 40px;
+              color: white;
+              font-weight: bold;
+            }
+
+            &:nth-child(3) {
+              font-size: 18px;
+              color: white;
+              font-weight: bold;
+              text-align: left;
+              margin-top: 30px;
+            }
+          }
+
+          button {
+            border: 1px solid #212121;
+            background-color: #212121;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            margin-top: 30px;
+          }
+        }
+      }
+
+      :nth-child(2) {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+        background-image: url(../../../assets/image/products-online-courses.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+
+        > {
+          p {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            margin-top: 50px;
+          }
+
+          form {
+            display: flex;
+            margin-top: 21px;
+            flex-direction: column;
+
+            > {
+              input {
+                width: 80%;
+                height: 40px;
+                margin: 20px auto;
+              }
+
+              button {
+                border: 1px solid #ffc107;
+                background-color: #ffc107;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+                width: 200px;
+                height: 40px;
+                margin-top: 30px;
+                margin-left: 160px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

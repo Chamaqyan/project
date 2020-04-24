@@ -1,0 +1,45 @@
+<div class="menu">
+    <div class="logo">
+
+    </div>
+    <div class="logominimaize">
+        <span>
+            WE ARE GYUMRI
+        </span>
+    </div>
+    <div class="iconmenu" (click)="showMenu()">
+        <i class="fas fa-align-justify" id="drop"></i>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <!-- <li><a href="">WHAT WE DO</a></li> -->
+            <li><a href="">SCOLAR SHIP</a></li>
+            <li><a routerLink="/volunteer">VOLUNTEERS</a></li>
+            <li><a href="">Gallery</a></li>
+            <!-- <li><a href="">DONATION</a></li> -->
+            <!-- <li><a href="">BLOG</a></li> -->
+        </ul>
+    </div>
+    <div class="tel">
+        <div>
+            <span class="fas fa-phone-volume"></span>
+            <span class=''>(+374)93000954</span>
+        </div>
+    </div>
+</div>
+
+<div class="nav2" *ngIf="show">
+    <ul>
+        <li><i class="fas fa-times" id="x" (click)="showMenu()"></i></li>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <!-- <li><a href="">WHAT WE DO</a></li> -->
+        <li><a href="">SCOLAR SHIP</a></li>
+        <li><a routerLink="/volunteer">VOLUNTEERS</a></li>
+        <!-- <li><a href="">SPONSORS</a></li> -->
+        <!-- <li><a href="">DONATION</a></li> -->
+        <!-- <li><a href="">BLOG</a></li> -->
+    </ul>
+</div>

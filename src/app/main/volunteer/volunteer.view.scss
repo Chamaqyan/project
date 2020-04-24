@@ -1,0 +1,29 @@
+.vol{
+    
+    background-image: url(../../../assets/image/vol.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.volBox{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1515158a;
+  }
+.vol span{
+      font-size: 50px;
+      font-weight: bold;
+      color:white;
+}
+
+.container{
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }

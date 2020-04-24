@@ -1,0 +1,65 @@
+<div>
+    <app-slider></app-slider>
+</div>
+<div class="main">
+    <div class="ourActive">
+        <div class="ourActiveTextProffile">
+            <h2>OUR ACTIVE</h2>
+        </div>
+        <div class="cardOurActive">
+            <div class="grid">
+                <app-ouractive-item *ngFor="let item of [0,0,0]"></app-ouractive-item>
+
+            </div>
+        </div>
+    </div>
+    <div class="OurServices">
+        <div class="ourServicesTextProffile">
+            <h2>OUR SERVICES</h2>
+        </div>
+        <div class="grid">
+            <app-ourservices-item *ngFor="let item of [0,0,0]"></app-ourservices-item>
+        </div>
+
+    </div>
+</div>
+<div class="donat">
+    <h2>DONATE NOW</h2>
+    <form [formGroup]="donatForm">
+        <input type="text" class="donEmail" placeholder="ADD  Email" formControlName="email" />
+        <input type="submit" class="donInput" />
+    </form>
+</div>
+<div class="workClassSerch">
+    <div>
+        <p>You Can Register </p>
+        <p>For Register</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged. It was popularised in </p>
+        <button (click)="onClickOpenRegistorModal()">Register Now</button>
+    </div>
+    <div>
+        <p>SERCH FOR YOUR CLASS</p>
+        <form [formGroup]="searchForm">
+            <div class="form-group w-50">
+                <input type="text" formControlName="className">
+                <label [activeLabel]="searchForm.get('className').value">Class-Name*</label>
+            </div>
+            <div class="form-group w-50">
+                <input type="text" formControlName="catigory">
+                <label [activeLabel]="searchForm.get('catigory').value">Category*</label>
+            </div>
+            <button>SEARCH CLASS</button>
+        </form>
+    </div>
+</div>
+<div class="event-details">
+    <div class="title">
+        <h2>Event</h2>
+    </div>
+    <div class="content">
+        <app-event *ngFor = "let event of [0,0,0]"></app-event>
+    </div>
+</div>

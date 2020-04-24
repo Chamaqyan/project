@@ -1,0 +1,29 @@
+.gallery {
+  background-image: url(../../../assets/image/galleries-icc.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  .galleryBox {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1515158a;
+  }
+  span{
+      font-size: 50px;
+      font-weight: bold;
+      color:white;
+  }
+}
+
+.container{
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin:   auto; 
+
+}
